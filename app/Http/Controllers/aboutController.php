@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 use DB;
 
-use Illuminate\Http\Request;
-
+//use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -17,9 +17,13 @@ class aboutController extends Controller
      */
     public function index()
     {
-	    $users = \DB::table('users')->get();
-	    dd($users);
-        return view("users.user_pkid");
+	    $users = DB::table('users')->get();
+	    //dd($users);
+	    
+	    //$uri = Request::path();
+	   $name = Request::server("SERVER_NAME");
+	    dd($name);
+        //return view("users.user_pkid");
     }
 
     /**
