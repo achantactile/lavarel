@@ -1,1 +1,1 @@
-{"virtualbox":{"/var/www":{"mount_options":["dmode=777","fmode=666"],"guestpath":"/var/www","hostpath":"/Users/angelachan/Desktop/laravel-code/lavarel","disabled":false}}}
+{"virtualbox":{"/var/www":{"mount_options":["dmode=777","fmode=666"],"guestpath":"/var/www","hostpath":"/Users/angelachan/htdocs/lavarel","disabled":false}}}

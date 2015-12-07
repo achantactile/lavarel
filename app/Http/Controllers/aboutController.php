@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use DB;
 
 use Illuminate\Http\Request;
 
@@ -16,7 +17,9 @@ class aboutController extends Controller
      */
     public function index()
     {
-        return view("about");
+	    $users = \DB::table('users')->get();
+	    dd($users);
+        return view("users.user_pkid");
     }
 
     /**
