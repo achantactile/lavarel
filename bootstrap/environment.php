@@ -10,19 +10,19 @@
 |
 */
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\Request;	
-$name = Request::server("SERVER_NAME");
+//use Illuminate\Support\Facades\Request;	
+//$name = Request::server("SERVER_NAME");
 
 $env = $app->detectEnvironment(function(){
 	
-	if ($name == 'dev-scotchbox-test.com'){
-		$setEnv = 'dev';
-	}else if ($name == 'prod.scotch.com'){
-		$setEnv = 'prod';
-	}
+//	if ($name == 'dev-scotchbox-test.com'){
+//		$setEnv = 'dev';
+//	}else if ($name == 'prod.scotch.com'){
+//		$setEnv = 'prod';
+//	}
 
 $environmentPath = __DIR__.'/../.env';
-//$setEnv = trim(file_get_contents($environmentPath));
+$setEnv = trim(file_get_contents($environmentPath));
 	if (file_exists($environmentPath))
 	{
 	putenv("APP_ENV=$setEnv");
