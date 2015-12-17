@@ -941,6 +941,12 @@ header {
       width: 36px;
       height: 36px;
       border-radius: 50%; }
+  .main-nav .avatar a:last-child {
+    top: 0; }
+  .main-nav .avatar img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%; }
   .main-nav a {
     color: #5a1439;
     word-wrap: break-word;

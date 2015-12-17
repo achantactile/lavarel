@@ -533,6 +533,10 @@ header { margin-bottom: 1.2em; background: white; position: fixed; top: 0; width
 		a:last-child {top: 0;}
 		img {width: 36px; height: 36px; border-radius: 50%; }
 	}
+	.avatar{
+				a:last-child {top: 0;}
+		img {width: 36px; height: 36px; border-radius: 50%; }
+	}
 	a {color: $purple; word-wrap: break-word; text-decoration: none; @include transition;
 		&:hover {color: $darkpink;}
 	}
